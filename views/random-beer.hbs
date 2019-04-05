@@ -1,0 +1,15 @@
+{{! Tarjeta reutilizable de cerveza }}
+<article class="beer-card">
+  <div class="beer-card__media">
+    <img src="{{image_url}}" alt="{{name}}" />
+  </div>
+  <div class="beer-card__body">
+    <h3>{{name}}</h3>
+    {{#if tagline}} <p class="tagline">{{tagline}}</p> {{/if}}
+    {{#if description}} <p class="desc">{{description}}</p> {{/if}}
+    <ul class="meta">
+      {{#if abv}} <li><strong>ABV:</strong> {{abv}}%</li> {{/if}}
+      {{#if ibu}} <li><strong>IBU:</strong> {{ibu}}</li> {{/if}}
+    </ul>
+  </div>
+</article>

@@ -1,0 +1,8 @@
+{{! Lista TODAS las cervezas }}
+<section class="grid">
+  {{#each beers}}
+    <a class="beer-card-link" href="/beers/{{id}}">
+      {{> beerpartial this}}
+    </a>
+  {{/each}}
+</section>
